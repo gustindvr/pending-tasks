@@ -4,7 +4,6 @@ import { justifyContents, alignValues, basePx} from '../../constants/layout';
 
 const baseSizeCol = 6.25;
 export const Col = styled.div ` 
-flex: 0;
 flex-flow: row wrap;
 ${(props) => `flex : 0 0 ${props.col * baseSizeCol}%`};
 ${(props) => props.m && `margin : ${props.m * basePx}px`};
@@ -15,6 +14,12 @@ ${(props) => props.r && `margin-right : ${props.r * basePx}px`};
 ${(props) => props.p && `padding : ${props.p * basePx}px`}
 ${(props) => props.align && `align-items : ${props.align}`};
 ${(props) => props.justify && `justify-content : ${props.justify}`};
+
+  @media (min-width: 300px) and (max-width: 600px){
+    flex: 0 0 100%;
+  }
+
+
 `;
 
 Col.propTypes = {

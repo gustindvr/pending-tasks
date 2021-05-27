@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'Caveat-Variable';
+  src: url(./assets/fonts/Caveat-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'AlfaSlab';
+  src: url(./assets/fonts/AlfaSlabOne-Regular.ttf) format('truetype');
+}
