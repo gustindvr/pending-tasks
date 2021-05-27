@@ -42,9 +42,9 @@ const Modal = ({task, closeModal, setError, error}) => {
                 message='Uno o mas campos están vacios' 
               /> : null}
             <Label>Task Name</Label>
-            <Input p={2} m={2} name='title' defaultValue={task[0].title} onChange={e => setEditTitle(e.target.value)} />
+            <Input p={2} m={2} bradius={4} name='title' defaultValue={task[0].title} onChange={e => setEditTitle(e.target.value)} />
             <Label m={3}>Task Description</Label>
-            <TextArea p={5} m={2} name='description' defaultValue={task[0].description} onChange={e => setEditDescription(e.target.value)} ></TextArea>
+            <TextArea p={5} m={2} bradius={4} name='description' defaultValue={task[0].description} onChange={e => setEditDescription(e.target.value)} ></TextArea>
             <Button type='submit' onClick={e => newValueTask(e)}>Actualizar</Button>
           </Form>
         }

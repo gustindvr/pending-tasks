@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ContentModal = styled.div `
+  position: fixed;
   display: flex;
   width: 40vw ;
   text-align: center;
